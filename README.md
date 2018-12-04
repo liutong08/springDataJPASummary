@@ -1,12 +1,13 @@
 # springDataJPASummary
 springDataJPASummary
+
 springData JPA
 	
 	1、使用默认的方法
 	
 		1.使用默认的新增方法CrudRepository的S extends T> S save(S entity);方法
-		2.使用默认的更新方法 JpaRepository的<S extends T> S saveAndFlush(S entity);方法
-		3.使用默认的查询所有的方法JpaRepository的List<T> findAll();
+		2.使用默认的更新方法JpaRepository的<S extends T> S saveAndFlush(S entity);方法
+		3.使用默认的查询所有方法JpaRepository的List<T> findAll();方法
 		4.使用默认的删除方法CrudRepository的void delete(T entity);方法
 		5.使用默认的findAll方法进行分页操作
 		
@@ -17,7 +18,7 @@ springData JPA
 		
 	3、创建方法@query() :?1 :别名
 	
-		创建通过id更新type方法，添加事务transaction以及modifing
+		updateType 创建通过id更新type方法，添加事务transaction以及modifing 
 		
 	4、使用拼接关键字和实体类属性的方法，不需要写@Query()
 	
